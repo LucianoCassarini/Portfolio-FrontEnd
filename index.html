@@ -16,54 +16,126 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <!--?=============================================================================-->
     <!--?                                       NAV                                   -->
     <!--?=============================================================================-->
-    <nav class="navbar fixed-top glass">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">
-            <div class="logo"><img src="Imagenes/logoArgentinaPrograma.png" alt="logo de Argentina programa"></div>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid fixed-top nav-main-div">
+        <!--! Argentina programa logo -->
+        <a
+          class="navbar-brand"
+          href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+          target="_blank"
+        >
+          <div class="logo">
+            <img
+              src="Imagenes/logoArgentinaPrograma.png"
+              alt="logo de Argentina programa"
+            />
+          </div>
         </a>
+        <!--! Social networks -->
+        <div id="social-networks"></div>
+        
+        <!--! Manú Sandwich -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler sandwich-menu"
           type="button"
           data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
-            <!--Menú Hamburguesa-->
-          <span class="navbar-toggler-icon"></span>
+          <svg
+            class="navbar-toggler-icon sandwich-icon bi bi-list"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
         </button>
         <div
-          class="offcanvas offcanvas-end text-bg-dark"
+          class="offcanvas offcanvas-end glass sidebar"
           tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <!--Titulo del menú desplegable-->
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Luciano Cassarini
+            <!--! Titulo de menú desplegable -->
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              LCassarini
             </h5>
-            <!-- Boton para cerrar menú-->
+            <!--! crucecita de cierre -->
             <button
               type="button"
-              class="btn-close btn-close-white"
+              class="btn-close"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
+          <!--! Opciones de navegación -->
+          <div class="offcanvas-body sections">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-house icon-side-bar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                    /></svg
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person icon-side-bar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                    /></svg
+                  >About Me</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-terminal icon-side-bar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"
+                    />
+                    <path
+                      d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"
+                    /></svg
+                  >Projects</a
+                >
               </li>
             </ul>
           </div>
@@ -74,8 +146,6 @@
     <!--?=============================================================================-->
     <!--?                                    Container                                -->
     <!--?=============================================================================-->
-
-    <div class="container"></div>
 
     <footer></footer>
 

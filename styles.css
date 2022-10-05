@@ -1,6 +1,6 @@
 
 :root {
-    --colorGlass: rgba(62, 67, 46, 0.20);
+    --colorGlass: rgba(62, 67, 46, 0.60);
     --neon: rgba(167, 209, 41, 0.37);
     --claro: #A7D129;
     --fondo: #000;
@@ -15,6 +15,15 @@ body{
     background-color: var(--fondo);
 }
 
+path{
+    fill: white;
+}
+
+.glass{
+    background-color: var(--colorGlass);
+    backdrop-filter: blur(5px);
+}
+
 /*? ==============================  NAV ============================== */
 .logo{
     display: flex;
@@ -22,15 +31,44 @@ body{
 }
 
 .logo img{
-    max-height: 60px;
+    margin: 10px 10px;
+    max-height: 25px;
 }
 
 nav{
     background-color: var(--fondo);
 }
 
-.glass{
+.nav-main-div{
     background-color: var(--colorGlass);
-    box-shadow: 0 8px 32px 0 rgba(167, 209, 41, 0.37);
-    /* backdrop-filter: blur(5px); */
+    /*! Problema de desplegable */
+    /* backdrop-filter: blur(10px); */
+}
+
+.sandwich-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.sandwich-icon{
+    max-height: 60px;
+}
+
+/**------- SIDE BAR -------*/
+.sidebar{
+    color: white;
+}
+
+.sections a{
+    color: white;
+}
+
+.icon-side-bar{
+    margin-right: 5px;
+}
+
+.sections a:hover{
+    color: var(--claro);
+    /*! No cambia el color de los iconos */
+    fill: var(--claro) !important;
 }
