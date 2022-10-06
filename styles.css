@@ -13,6 +13,8 @@
 }
 body{
     background-color: var(--fondo);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
 }
 
 path{
@@ -71,4 +73,41 @@ nav{
     color: var(--claro);
     /*! No cambia el color de los iconos */
     fill: var(--claro) !important;
+}
+
+/*? ============================== CONTAINER ============================== */
+#principal-container{
+    margin-top: 80px;
+}
+
+#banner{
+    background-image: url(Imagenes/banner.jpg);
+    border-radius: 20px;
+    height: 30vh;
+}
+
+#banner h2{
+    font-size: medium;
+}
+
+/**-- About Me --*/
+
+#foto-perfil{
+    max-width: 200px;
+}
+
+#download-cv{
+    margin-top: 5px;
+}
+
+
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 15px;
+}
+
+p{
+    font-size: 11px;
 }
