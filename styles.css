@@ -2,7 +2,7 @@
 :root {
     --colorGlass: rgba(62, 67, 46, 0.60);
     --neon: rgba(167, 209, 41, 0.37);
-    --claro: #A7D129;
+    --acid: #A7D129;
     --fondo: #000;
 }
 
@@ -15,6 +15,14 @@ body{
     background-color: var(--fondo);
     color: white;
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 path{
@@ -70,9 +78,9 @@ nav{
 }
 
 .sections a:hover{
-    color: var(--claro);
+    color: var(--acid);
     /*! No cambia el color de los iconos */
-    fill: var(--claro) !important;
+    fill: var(--acid) !important;
 }
 
 /*? ============================== CONTAINER ============================== */
@@ -84,10 +92,14 @@ nav{
     background-image: url(Imagenes/banner.jpg);
     border-radius: 20px;
     height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #banner h2{
     font-size: medium;
+    color: var(--acid);
 }
 
 /**-- About Me --*/
@@ -110,4 +122,114 @@ h4{
 
 p{
     font-size: 11px;
+}
+
+/*? ==================== Titulos de secciones =====================*/
+.section-title{
+    margin: 15px 0 10px 10px;
+}
+
+.ruta{
+    color: var(--acid);
+}
+
+/*? ==================== About Me =====================*/
+#about-card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#download-cv{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+/*!--- Botones --- */
+.btn-neon, .btn-neon.active, .btn-neon:hover{
+    position: relative;
+    border-style: none;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-weight: bold;
+    background-color: var(--acid);
+    color: black;
+    border: 1px solid var(--acid);
+    box-shadow: 1px 1px 10px 2px var(--acid);
+}
+
+.btn-neon{
+    background-color: transparent;
+    color: var(--acid);
+    box-shadow: none;
+}
+
+.separation{
+    color: var(--acid);
+    box-shadow: 1px 1px 10px 2px var(--acid);
+}
+
+/*?===== Work card =====*/
+
+.card{
+    color: #fff;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.card-title{
+    font-size: medium;
+}
+
+/*?========================= Skills ======================*/
+.progress{
+    width: 75%;
+}
+
+.progress-lenguage{
+    display: flex;
+    justify-content: right;
+    margin: 0;
+}
+
+.progress-lenguage p{
+    border: 1px solid red;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+/*?--- LEARNING ---*/
+
+#learning{
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.technology{
+    align-items: center;
+    text-align: center;
+}
+
+.technology img{
+    width: 40px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorGlass);
+    color: var(--acid);
+    margin: 0;
+    padding: 15px;
+}
+
+footer p{
+    font-size: medium;
 }
