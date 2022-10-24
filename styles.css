@@ -113,6 +113,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+}
+
+.black-box{
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #banner h2 {
@@ -193,7 +204,6 @@ p {
 }
 
 /*?===== Work card =====*/
-
 .card {
   color: #fff;
   display: flex;
@@ -207,14 +217,20 @@ p {
   font-size: medium;
 }
 
-.custom-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card-about{
+  border-radius: 30px;
 }
 
-.custom-card img {
+.card-about img{
   width: 100px;
+  border: 2px solid var(--acid);
+  border-radius: 150px;
+  margin: 15px 15px;
+}
+
+.card-grid{
+  display: flex;
+  flex-direction: column;
 }
 
 /*?========================= Skills ======================*/
