@@ -10,11 +10,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: var(--fondo);
   color: white;
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
+}
+
+#main-gap{
+  margin: 0;
 }
 
 #particles-js {
@@ -52,8 +57,6 @@ path {
 
 .nav-main-div {
   background-color: var(--colorGlass);
-  /*! Problema de desplegable */
-  /* backdrop-filter: blur(10px); */
 }
 
 .sandwich-menu {
@@ -182,7 +185,7 @@ path {
 /**-- About Me --*/
 
 #foto-perfil {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 #download-cv {
@@ -213,8 +216,9 @@ p {
 /*? ==================== About Me =====================*/
 #about-card {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 #download-cv {
   display: flex;
@@ -266,7 +270,14 @@ p {
 }
 
 .card-about{
+  padding: 0;
   border-radius: 30px;
+}
+
+.col-md-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-about img{
@@ -517,4 +528,110 @@ footer p {
 .custom-input input{
   border-radius: 0 5px 5px 0;
   margin-left: -5px;
+}
+
+
+/**====================== TABLETS ===================== */
+@media screen and (min-width: 768px){
+  
+}
+
+/**====================== FULL SCREEN ================= */
+@media screen and (min-width: 1024px){
+
+  #banner{
+    height: 50vh;
+  }
+  .black-box{
+    height: 50vh;
+  }
+
+  /** ------- ABOUT ME ------*/
+
+  #about{
+    display: flex;
+  }
+
+  #download-cv{
+    max-width: 30%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /**------- EXPERIENCE -------*/
+
+  #work-experience{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #acreditations{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .card-about{
+    margin-right: 10px;
+  }
+
+  /** ------ SKILLS ------*/
+
+  #skills-media{
+    display: flex;
+  }
+
+  #barras-progreso{
+    width: 70%;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .progress{
+    width: 80%;
+  }
+
+  #learn-container{
+    margin-left: 0;
+    margin-right: 0;
+    width: 30%;
+  }
+
+  /**------- PROJECTS -------*/
+  #projects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor figure {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    overflow: hidden; /* oculta los objetos fuera del contenedor  */
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px var(--neon);
+    cursor: pointer;
+  }
+  
+  .contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .contenedor figure:hover > .capa h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor figure .capa p {
+    font-size: 13px;
+  }
+
 }
