@@ -445,6 +445,10 @@ p {
     height: 50px;
 }
 
+#foto-contacto{
+  max-width: 150px;
+}
+
 .contact-link{
     display: fixed;
 }
@@ -470,7 +474,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--acid);
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 15px;
 }
 
@@ -628,4 +632,28 @@ footer p {
     font-size: 11.8px;
   }
 
+  /**------ CONTACT ME ------*/
+  #contact{
+    display: flex;
+    align-items: center;
+  }
+
+  #my-contacts{
+    height: 315px;
+    margin: 15px 0;
+    justify-content: center;
+  }
+
+  #my-contacts p{
+    margin: 0;
+  }
+
+  #contact-networks{
+    width: 40%;
+    justify-content: right;
+  }
+
+  #foto-contacto{
+    max-width: 300px;
+  }
 }
