@@ -18,7 +18,7 @@ body {
   letter-spacing: 2px;
 }
 
-#main-gap{
+#main-gap {
   margin: 0;
   margin-top: 80px;
   align-items: center;
@@ -70,42 +70,47 @@ path {
   max-height: 60px;
 }
 
-.sidebar{
-  width: 300px !important;
+.btn-close{
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background-color: var(--acid);
 }
 
 /*?------ Login ------*/
-#login-btn{
+#login-btn {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
-  margin-top: 130px;
+  position: absolute;
+  bottom: 100px;
+  /* mitad del ancho de .sidebar - 75 */
+  right: 75px;
 }
 
-#login-btn button{
+#login-btn button {
   width: 150px;
 }
 
-#login-btn p{
+#login-btn p {
   margin-bottom: 5px;
 }
 
 /*? ------- Switch de lenguaje ------*/
-#lenguage-switch{
+#lenguage-switch {
   display: flex;
   margin-top: 50px;
   justify-content: left;
 }
 
-#lenguage-switch p{
+#lenguage-switch p {
   margin: 0 10px 0 0;
   display: flex;
   align-items: center;
 }
 
-.switch{
+.switch {
   height: 25px;
   width: 50px !important;
   margin-right: 10px;
@@ -113,13 +118,13 @@ path {
   padding: 0;
 }
 
-.switch:checked{
+.switch:checked {
   background-color: var(--acid);
   border: none;
 }
 
 /*?------ Social Networks ------*/
-#social-networks{
+#social-networks {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -127,7 +132,7 @@ path {
   right: 1px;
 }
 
-#social-networks a svg{
+#social-networks a svg {
   width: 30px;
   height: 30px;
   margin: 30px 20px;
@@ -135,6 +140,7 @@ path {
 
 /**------- SIDE BAR -------*/
 .sidebar {
+  width: 300px !important;
   color: white;
 }
 
@@ -166,7 +172,7 @@ path {
   padding: 0;
 }
 
-.black-box{
+.black-box {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   height: 30vh;
@@ -268,25 +274,25 @@ p {
   font-size: medium;
 }
 
-.card-about{
+.card-about {
   padding: 0;
   border-radius: 30px;
 }
 
-.col-md-4{
+.col-md-4 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card-about img{
+.card-about img {
   width: 100px;
   border: 2px solid var(--acid);
   border-radius: 150px;
   margin: 15px 15px;
 }
 
-.card-grid{
+.card-grid {
   display: flex;
   flex-direction: column;
 }
@@ -320,17 +326,18 @@ p {
 }
 
 .technology {
-  margin: 10px 0;
+  margin: 0 15px;
   align-items: center;
   text-align: center;
 }
 
 .technology img {
-  width: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .technology p {
-  margin: 0;
+  margin-top: 5px;
 }
 
 .worked {
@@ -416,8 +423,8 @@ p {
 }
 
 /*? ------------- Contact Me --------------*/
-#my-contacts{
-    align-items: center;
+#my-contacts {
+  align-items: center;
 }
 
 #contact-networks {
@@ -440,33 +447,31 @@ p {
   border-radius: 30px;
 }
 
-.contacto svg{
-    width: 50px;
-    height: 50px;
+.contacto svg {
+  width: 50px;
+  height: 50px;
 }
 
-#foto-contacto{
+#foto-contacto {
   max-width: 150px;
 }
 
-.contact-link{
-    display: fixed;
+.contact-link {
+  display: fixed;
 }
 
-#correo-hov{
-    position: absolute;
-    visibility: hidden;
+#correo-hov {
+  position: absolute;
+  visibility: hidden;
 }
 
 .contacto:hover {
-    box-shadow: 0px 5px 15px var(--neon);
+  box-shadow: 0px 5px 15px var(--neon);
 }
 
-
-.contacto:hover path{
-    fill: var(--acid);
+.contacto:hover path {
+  fill: var(--acid);
 }
-
 
 /*? ------------- FOOTER --------------*/
 footer {
@@ -483,34 +488,36 @@ footer p {
 }
 
 /*? ------------------ LOGIN ----------------- */
-#login{
+#login {
   display: none;
 }
 
-#login-card{
+#login-card {
   border-radius: 1rem;
-  background-color: #3E432E;
+  background-color: #3e432e;
   box-shadow: 0px 20px 60px var(--neon);
 }
 
-.form-check-label{
+.form-check-label {
   margin-left: 10px;
 }
 
-#login-card input{
+#login-card input {
   color: #fff;
 }
 
-#login-card button{
+#login-card button {
   width: 150px;
 }
 
-#typePasswordX-2, #typeEmailX-2{
+#typePasswordX-2,
+#typeEmailX-2 {
   background-color: rgba(29, 37, 30, 0.7);
   border: none;
 }
 
-#usr-box, #pass-box{
+#usr-box,
+#pass-box {
   background-color: #000;
   border-radius: 5px;
   width: 50px;
@@ -520,91 +527,65 @@ footer p {
   justify-content: center;
 }
 
-#usr-box svg, #pass-box svg{
+#usr-box svg,
+#pass-box svg {
   width: 30px;
 }
 
-.custom-input{
+.custom-input {
   display: flex;
 }
 
-.custom-input input{
+.custom-input input {
   border-radius: 0 5px 5px 0;
   margin-left: -5px;
 }
 
-
 /**====================== TABLETS ===================== */
-@media screen and (min-width: 768px){
-  
-}
-
-/**====================== FULL SCREEN ================= */
-@media screen and (min-width: 1024px){
-
-  #banner{
-    height: 50vh;
-  }
-  .black-box{
-    height: 50vh;
-  }
-
+@media screen and (min-width: 768px) {
   /** ------- ABOUT ME ------*/
 
-  #about{
+  #about {
     display: flex;
   }
 
-  #download-cv{
+  #download-cv {
     max-width: 30%;
     margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  /**------- EXPERIENCE -------*/
-
-  #work-experience{
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  #acreditations{
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  .card-about{
-    margin-right: 10px;
-  }
-
   /** ------ SKILLS ------*/
 
-  #skills-media{
+  #skills-media {
     display: flex;
   }
 
-  #barras-progreso{
-    width: 70%;
+  #barras-progreso {
+    width: 60%;
     margin-left: 0;
     margin-right: 10px;
   }
 
-  .progress{
+  .progress {
     width: 80%;
   }
 
-  #learn-container{
+  #learn-container {
     margin-left: 0;
     margin-right: 0;
-    width: 30%;
+    width: 40%;
   }
 
+  .technology img {
+    width: 30px;
+    height: 30px;
+  }
   /**------- PROJECTS -------*/
-  #projects{
+  #projects {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
 
   .contenedor {
@@ -612,7 +593,7 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  
+
   .contenedor figure {
     position: relative;
     height: 200px;
@@ -622,38 +603,161 @@ footer p {
     box-shadow: 0px 5px 15px var(--neon);
     cursor: pointer;
   }
-  
+
   .contenedor figure:hover > .capa h3 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
+
   .contenedor figure .capa p {
     font-size: 11.8px;
   }
 
   /**------ CONTACT ME ------*/
-  #contact{
+  #contact {
     display: flex;
     align-items: center;
   }
 
-  #my-contacts{
+  #my-contacts {
     height: 315px;
     margin: 15px 0;
     justify-content: center;
   }
 
-  #my-contacts p{
+  #my-contacts p {
     margin: 0;
   }
 
-  #contact-networks{
+  #contact-networks {
+    width: 50%;
+    justify-content: right;
+  }
+
+  #foto-contacto {
+    max-width: 200px;
+  }
+}
+
+/**====================== FULL SCREEN ================= */
+@media screen and (min-width: 1024px) {
+  #banner {
+    height: 50vh;
+  }
+  .black-box {
+    height: 50vh;
+  }
+
+  /** ------- ABOUT ME ------*/
+
+  #about {
+    display: flex;
+  }
+
+  #download-cv {
+    max-width: 30%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /**------- EXPERIENCE -------*/
+
+  #work-experience {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #acreditations {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .card-about {
+    margin-right: 10px;
+  }
+
+  /** ------ SKILLS ------*/
+
+  #skills-media {
+    display: flex;
+  }
+
+  #barras-progreso {
+    width: 70%;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .progress {
+    width: 80%;
+  }
+
+  #learn-container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 30%;
+  }
+
+  .technology img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /**------- PROJECTS -------*/
+  #projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor figure {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    overflow: hidden; /* oculta los objetos fuera del contenedor  */
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px var(--neon);
+    cursor: pointer;
+  }
+
+  .contenedor figure:hover > .capa h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contenedor figure .capa p {
+    font-size: 11.8px;
+  }
+
+  /**------ CONTACT ME ------*/
+  #contact {
+    display: flex;
+    align-items: center;
+  }
+
+  #my-contacts {
+    height: 315px;
+    margin: 15px 0;
+    justify-content: center;
+  }
+
+  #my-contacts p {
+    margin: 0;
+  }
+
+  #contact-networks {
     width: 40%;
     justify-content: right;
   }
 
-  #foto-contacto{
+  #foto-contacto {
     max-width: 300px;
   }
 }
