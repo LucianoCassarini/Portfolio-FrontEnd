@@ -110,3 +110,40 @@ particlesJS(
         "retina_detect": true
       }
 );
+
+const maquinaAbout = document.getElementById('maquina-about');
+const maquinaWork = document.getElementById('maquina-work');
+const maquinaAcreditation = document.getElementById('maquina-acreditation');
+const maquinaSkills = document.getElementById('maquina-skills');
+const maquinaProjects = document.getElementById('maquina-project');
+const maquinaContact = document.getElementById('maquina-contact');
+
+const maquinaEscribir3 = (text = '', tiempo = 200, etiqueta = '')=>{
+  //! Crea un arreblo con todos los caracteres que le paso
+  let arrayCaracteres = text.split('');
+  etiqueta.innerHTML = '';
+  let i = 0;
+  let j = text.length;
+  let escribir = setInterval(function(){
+      if(i === arrayCaracteres.length){
+          //*retroceder
+          etiqueta.innerHTML = text.substring(0,j);
+          j--;
+          if(j === 0){
+              i = 0;
+              etiqueta.innerHTML = '';
+              j = text.length;
+          }
+      }else{
+          etiqueta.innerHTML += arrayCaracteres[i];
+          i++;
+      }
+  }, tiempo)
+}
+
+maquinaEscribir3("AboutMe  ", 200, maquinaAbout);
+maquinaEscribir3("Work  ", 200, maquinaWork);
+maquinaEscribir3("Acreditations  ", 200, maquinaAcreditation);
+maquinaEscribir3("Skills  ", 200, maquinaSkills);
+maquinaEscribir3("Projects ", 200, maquinaProjects);
+maquinaEscribir3("ContactMe  ", 200, maquinaContact);

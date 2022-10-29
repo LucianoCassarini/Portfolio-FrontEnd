@@ -182,8 +182,8 @@ path {
   align-items: center;
 }
 
-#banner h2 {
-  font-size: medium;
+.black-box h2 {
+  font-size: small;
   color: var(--acid);
 }
 
@@ -212,6 +212,10 @@ p {
 .section-title {
   font-size: larger;
   margin: 15px 0 20px 10px;
+}
+
+.titulo{
+  color: #fff;
 }
 
 .ruta {
@@ -646,6 +650,11 @@ footer p {
   }
   .black-box {
     height: 50vh;
+  }
+
+  .black-box h2 {
+    font-size: medium;
+    color: var(--acid);
   }
 
   /** ------- ABOUT ME ------*/
