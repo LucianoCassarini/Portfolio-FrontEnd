@@ -111,6 +111,10 @@ particlesJS(
       }
 );
 
+
+//******************************************************************************
+// *                           Maquinas de escribir
+// *****************************************************************************
 const maquinaAbout = document.getElementById('maquina-about');
 const maquinaWork = document.getElementById('maquina-work');
 const maquinaAcreditation = document.getElementById('maquina-acreditation');
@@ -147,3 +151,35 @@ maquinaEscribir3("Acreditations  ", 200, maquinaAcreditation);
 maquinaEscribir3("Skills  ", 200, maquinaSkills);
 maquinaEscribir3("Projects ", 200, maquinaProjects);
 maquinaEscribir3("ContactMe  ", 200, maquinaContact);
+
+//******************************************************************************
+// *                           Copiar al portapapeles
+// *****************************************************************************
+function copiarAlPortapapeles(id_elemento) {
+  // Crea un campo de texto "oculto"
+  var aux = document.createElement("input");
+  // Asigna el contenido del elemento especificado al valor del campo
+  aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+  // Añade el campo a la página
+  document.body.appendChild(aux);
+  // Selecciona el contenido del campo
+  aux.select();
+  // Copia el texto seleccionado
+  document.execCommand("copy");
+  // Elimina el campo de la página
+  document.body.removeChild(aux);
+}
+
+
+//******************************************************************************
+// *                                  Alertas!
+// *****************************************************************************
+let mostrar_alerta = document.querySelector(".myAlert");
+let btn_mostrar = document.querySelector("#btn_correo");
+
+mostrar_alerta.style.display = "none";
+
+btn_mostrar.addEventListener("click", (e)=>{
+  e.preventDefault();
+  mostrar_alerta.style.display = "block";
+});
