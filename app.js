@@ -174,12 +174,12 @@ function copiarAlPortapapeles(id_elemento) {
 //******************************************************************************
 // *                                  Alertas!
 // *****************************************************************************
-let mostrar_alerta = document.querySelector(".myAlert");
-let btn_mostrar = document.querySelector("#btn_correo");
-
-mostrar_alerta.style.display = "none";
-
-btn_mostrar.addEventListener("click", (e)=>{
-  e.preventDefault();
-  mostrar_alerta.style.display = "block";
-});
+function copy_alert(name_alert){
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: `${name_alert} has been copied.`,
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
