@@ -210,8 +210,8 @@ p {
 
 /*? ==================== Titulos de secciones =====================*/
 .section-title {
-  font-size: larger;
-  margin: 15px 0 20px 10px;
+  font-size: 15px;
+  margin: 15px 0 15px 10px;
 }
 
 .titulo{
@@ -252,6 +252,10 @@ p {
   box-shadow: 1px 1px 10px 2px var(--acid);
 }
 
+a{
+  text-decoration: none;
+}
+
 .btn-neon {
   background-color: transparent;
   color: var(--acid);
@@ -279,8 +283,11 @@ p {
 }
 
 .card-about {
-  padding: 0;
+  padding: 20px;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .col-md-4 {
@@ -579,6 +586,11 @@ footer p {
 
 /**====================== TABLETS ===================== */
 @media screen and (min-width: 768px) {
+  .section-title {
+    margin: 15px 0 15px 10px;
+    font-size: 20px;
+  }
+
   /** ------- ABOUT ME ------*/
 
   #about {
@@ -687,6 +699,11 @@ footer p {
   .black-box h2 {
     font-size: medium;
     color: var(--acid);
+  }
+
+  .section-title {
+    margin: 20px 0 20px 10px;
+    font-size: 25px;
   }
 
   /** ------- ABOUT ME ------*/
