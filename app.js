@@ -183,3 +183,16 @@ function copy_alert(name_alert){
     timer: 1500
   });
 }
+
+//******************************************************************************
+// *                                  Login
+// *****************************************************************************
+//! *** Abrir Login ***
+
+function openLogin(){
+  document.getElementById("login").style.display="block";
+}
+
+function closeLogin(){
+  document.getElementById("login").style.display="none";
+}

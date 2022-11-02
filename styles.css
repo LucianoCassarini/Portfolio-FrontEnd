@@ -503,6 +503,10 @@ footer p {
 /*? ------------------ LOGIN ----------------- */
 #login {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #login-card {
@@ -552,6 +556,25 @@ footer p {
 .custom-input input {
   border-radius: 0 5px 5px 0;
   margin-left: -5px;
+}
+
+.card-body{
+  padding-top: 0 !important;
+}
+
+#close-login{
+  display: flex;
+  justify-content: right;
+}
+
+#close-login svg{
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+#close-login svg:hover path{
+  fill: var(--acid);
 }
 
 /**====================== TABLETS ===================== */
